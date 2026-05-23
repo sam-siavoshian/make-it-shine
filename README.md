@@ -1,5 +1,7 @@
 # make-it-shine
 
+[![skills.sh](https://skills.sh/b/sam-siavoshian/make-it-shine)](https://skills.sh/sam-siavoshian/make-it-shine)
+
 Most repos ship looking abandoned: auto-generated README, no description, no topics, three rocket emojis, "Welcome to my project!" header. Then the same author tries to share it on X / Show HN with copy that screams AI: "comprehensive solution leveraging cutting-edge technology to seamlessly..."
 
 This repo fixes both ends, in one Claude Code skill plus a CLI.
