@@ -36,15 +36,24 @@ Before voice pick, the skill runs `scripts/fetch_lang_samples.sh` to pull recent
 
 ### Install the skill
 
+One command (via [skills.sh](https://www.skills.sh/) CLI):
+
+```bash
+npx skills add sam-siavoshian/make-it-shine
+```
+
+Auto-detects your agent (Claude Code, Cursor, Codex, GitHub Copilot, OpenCode, Gemini CLI, Cline, Windsurf, etc.) and installs there. Restart your agent. Trigger with any phrase from the description.
+
+Manual install (Claude Code only):
+
 ```bash
 git clone https://github.com/sam-siavoshian/make-it-shine ~/make-it-shine
+mkdir -p ~/.claude/skills/make-it-shine
 cp -R ~/make-it-shine/SKILL.md \
       ~/make-it-shine/scripts \
       ~/make-it-shine/references \
       ~/.claude/skills/make-it-shine/
 ```
-
-Restart Claude Code. Trigger with any phrase from the description.
 
 The skill expects `tools/tech-firehose/` reachable for fresh-language scans + share-snippet posting. The default path is `~/Desktop/Coding Stuff/Scripts Stuff/tech-firehose`; override with `TECH_FIREHOSE_DIR=/your/path` in the shell.
 
