@@ -1,0 +1,14 @@
+{
+  "name": "tech-firehose",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "playwright": "^1.60.0",
+    "puppeteer-core": "^25.0.4"
+  }
+}
